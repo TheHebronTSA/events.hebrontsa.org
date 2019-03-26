@@ -29,6 +29,11 @@ h3 {
 	color: #fff
 }
 
+h3 {
+	font-family: 'IBM Plex Sans Condensed', 'IBM Plex Sans', 'Lato';
+	font-weight: 500;
+}
+
 body {
 	background-color: #044bda;
 	font-family: 'IBM Plex Sans', 'Lato';
@@ -70,8 +75,49 @@ h2 {
 .btn {
 	white-space: normal !important;
 	word-wrap: break-word;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border-radius: 0px; 
+	cursor: pointer !important;
+}
+
+.btn-dark {
+	background: #000;
+}
+
+.btn-danger {
+	background: #bf0222;
+}
+
+.btn-light {
+	background: #fff;
+	color: #000;
+}
+
+.btn-light:hover {
+	color: #000;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pop {
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.pop:hover {
+  animation-name: pop;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 
 @media (min-width:576px) {
